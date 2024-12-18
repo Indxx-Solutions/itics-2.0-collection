@@ -1,0 +1,21 @@
+meta {
+  name: level2Create
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{base_url}}/level2Create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "Level2_Name": "Dummy Name",
+      "Level2_code": "12345678",
+      "description": "Hardcoded Description",
+      "email_id": "sys",
+      "level1" : 60
+  }
+}

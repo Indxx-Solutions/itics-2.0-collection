@@ -1,0 +1,19 @@
+meta {
+  name: CompanyCreate
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{base_url}}/CompanyCreate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "company_name":"test1",
+    "description":"test1",
+    "email_id":"sys"
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: SelfAssignedPermission
+  type: http
+  seq: 28
+}
+
+post {
+  url: {{base_url}}/SelfAssignedPermission
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "role_type": "ANALYST/QC",
+    "user_id": ["system@indxx.com","test@indxx.com"],
+    "nb_companies": 15,
+    "email_id": "sys"
+  }
+}

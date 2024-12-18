@@ -1,0 +1,25 @@
+meta {
+  name: CAListViewSet
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/ca/CAListViewSet?from_date=""&to_date=""& assignment_type=""&type=""
+  body: json
+  auth: none
+}
+
+params:query {
+  from_date: ""
+  to_date: ""
+   assignment_type: ""
+  type: ""
+}
+
+body:json {
+  {"from_date":"",
+  "to_date":"",
+  "assignment_type":"",
+  "type":""}
+}

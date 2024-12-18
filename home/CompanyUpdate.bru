@@ -1,0 +1,18 @@
+meta {
+  name: CompanyUpdate
+  type: http
+  seq: 8
+}
+
+patch {
+  url: {{base_url}}/CompanyUpdate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "company_name":"Test Company Name",
+    "email_id":"sys"
+  }
+}
