@@ -1,0 +1,17 @@
+meta {
+  name: DownloadReportAPIView
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base-url}}/report/downloadReport?from_date=""&ro_date=""&rp_name=""
+  body: none
+  auth: none
+}
+
+params:query {
+  from_date: ""
+  ro_date: ""
+  rp_name: ""
+}
