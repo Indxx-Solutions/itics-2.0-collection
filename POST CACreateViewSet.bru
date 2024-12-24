@@ -1,0 +1,24 @@
+meta {
+  name: POST CACreateViewSet
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}/ca/CACreateViewSet
+  body: json
+  auth: none
+}
+
+body:json {
+  {"isin":"",
+  "datasource":"",
+  "ca_type":"",
+  "effective_date":"",
+   "old_value":"",
+  "new_value":"",
+  "summary":"",
+  "email_id":"",
+  "company":"",
+  "state":""}
+}

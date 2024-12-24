@@ -1,0 +1,20 @@
+meta {
+  name: PATCH Level2Update
+  type: http
+  seq: 15
+}
+
+patch {
+  url: {{base_url}}/level2Update
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "Level2_Name": "Test_15jan",
+      "Level2_code": 123,
+      "level1": 60,
+      "email_id": "sys"
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: POST Level1Create
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}/level1Create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "Level1_Name": "Dummy Name",
+      "Level1_code": "12345678",
+      "description": "Hardcoded Description",
+      "email_id": "sys@indxx.com"
+  }
+}

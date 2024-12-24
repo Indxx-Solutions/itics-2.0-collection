@@ -1,0 +1,23 @@
+meta {
+  name: POST Rating
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{base_url}}/rating
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id" : "",
+    "name": "",
+    "value": "",
+    "criteria": "",
+    "lower_limit": "",
+    "upper_limit": "",
+    "created_by": ""
+  }
+}

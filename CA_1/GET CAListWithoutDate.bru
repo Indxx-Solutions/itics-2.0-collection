@@ -1,0 +1,15 @@
+meta {
+  name: GET CAListWithoutDate
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{base_url}}/ca/CAListWithoutDate?assignment_type='Delisting'
+  body: none
+  auth: none
+}
+
+params:query {
+  assignment_type: 'Delisting'
+}

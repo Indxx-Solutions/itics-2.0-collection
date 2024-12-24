@@ -1,0 +1,17 @@
+meta {
+  name: GET Level1list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/level1list
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "Level1_Name": "Banking"
+  }
+}

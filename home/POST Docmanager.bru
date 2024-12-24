@@ -1,0 +1,24 @@
+meta {
+  name: POST Docmanager
+  type: http
+  seq: 23
+}
+
+post {
+  url: {{base_url}}/Docmanager
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "file":"",
+    "email_id":"",
+    "company_id":"",
+    "fy_ending_date":""
+  }
+}
+
+vars:pre-request {
+  : 
+}

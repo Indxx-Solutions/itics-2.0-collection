@@ -1,0 +1,20 @@
+meta {
+  name: PATCH Level1Update
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{base_url}}/level1Update
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "Level1_Name": "new qwe",
+      "Level1_code": "123",
+      "description": "<new_description>",
+      "email_id": "sys"
+  }
+}

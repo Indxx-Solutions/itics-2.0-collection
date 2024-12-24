@@ -1,0 +1,16 @@
+meta {
+  name: GET Timeliness
+  type: http
+  seq: 1
+}
+
+get {
+  url: {base-url/mis/timeliness/?type_="audit"&company_id=345}
+  body: none
+  auth: none
+}
+
+params:query {
+  type_: "audit"
+  company_id: 345}
+}

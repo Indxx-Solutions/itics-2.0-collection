@@ -1,0 +1,23 @@
+meta {
+  name: PATCH Company
+  type: http
+  seq: 20
+}
+
+patch {
+  url: {{base_url}}/Company
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "website_link":"",
+    "investor_contact_number":"",
+    "investor_mail_id":"",
+    "indxx_id":"",
+    "country_of_incorporation":"",
+    "bd":"",
+    "email_id":""
+  }
+}

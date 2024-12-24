@@ -1,0 +1,21 @@
+meta {
+  name: PATCH SelfAssignedUpdateViewSet
+  type: http
+  seq: 29
+}
+
+patch {
+  url: {{base_url}}/SelfAssignedUpdateViewSet
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "id":"id",
+      "nb_companies_analyst":15,
+      "nb_companies_qc":15,
+      "button":"update/delete"
+  }
+  
+}
