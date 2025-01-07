@@ -1,0 +1,25 @@
+meta {
+  name: GET CA List
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/ca/CAListViewSet?from_date=2024-11-01&to_date=2024-12-31&assignment_type=Delisting&type=Analyst
+  body: json
+  auth: none
+}
+
+params:query {
+  from_date: 2024-11-01
+  to_date: 2024-12-31
+  assignment_type: Delisting
+  type: Analyst
+}
+
+body:json {
+  {"from_date":"",
+  "to_date":"",
+  "assignment_type":"",
+  "type":""}
+}

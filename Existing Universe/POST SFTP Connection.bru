@@ -1,0 +1,20 @@
+meta {
+  name: POST SFTP Connection
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{base_url}}/existing/sftpconnection/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "sftp_ip" : "",
+    "pwd" : "",
+    "user_id" : "",
+    "port" : ""
+  }
+}

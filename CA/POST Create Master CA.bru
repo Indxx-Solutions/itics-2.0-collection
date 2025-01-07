@@ -1,0 +1,26 @@
+meta {
+  name: POST Create Master CA
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{base_url}}/ca/MasterCreateViewSet/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "isin" : "",
+    "datasource" : "",
+    "ca_type" : "",
+    "effective_date" : "",
+    "old_value" : "",
+    "new_value" : "",
+    "summary" : "",
+    "comments" : "",
+    "email_id" : "",
+    "state" : ""
+  }
+}

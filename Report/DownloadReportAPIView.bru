@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: {{base-url}}/report/downloadReport?from_date=""&ro_date=""&rp_name=""
+  url: {{base_url}}/report/downloadReport?from_date=2024-12-01&to_date=2024-12-31&rp_name=Master Data
   body: none
   auth: none
 }
 
 params:query {
-  from_date: ""
-  ro_date: ""
-  rp_name: ""
+  from_date: 2024-12-01
+  to_date: 2024-12-31
+  rp_name: Master Data
 }

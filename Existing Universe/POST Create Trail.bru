@@ -1,0 +1,25 @@
+meta {
+  name: POST Create Trail
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url}}/existing/TrailCreateViewSet/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Dummy Name",
+    "description": "dummy data",
+    "start_date": "2022-01-01",
+    "end_date": "2022-01-02",
+    "sftp_id":"17.01345.56",
+    "pwd":"Prachi",
+    "port":"2022",
+    "user_id":"ppareek@indxx.com",
+    "valid":["AU000000GEM7","KE0000000315"]
+  }
+}

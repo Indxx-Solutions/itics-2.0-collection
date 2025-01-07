@@ -1,0 +1,26 @@
+meta {
+  name: PATCH Update CA
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{base_url}}/ca/CAUpdateViewSet
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "isin":"",
+    "datasource":"",
+    "ca_type":"",
+    "effective_date":"",
+     "old_value":"",
+    "new_value":"",
+    "summary":"",
+    "email_id":"",
+    "company":"",
+    "state":""
+  }
+}

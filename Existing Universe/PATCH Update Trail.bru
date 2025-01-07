@@ -1,0 +1,19 @@
+meta {
+  name: PATCH Update Trail
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{base_url}}/existing/TrailUpdateViewSet/1/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "end_date":"2011-01-19",
+    "email_id":"ppareek@indxx.com",
+    "button": "update/delete"
+  }
+}

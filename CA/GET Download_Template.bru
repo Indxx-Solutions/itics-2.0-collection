@@ -1,0 +1,15 @@
+meta {
+  name: GET Download_Template
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{base_url}}/ca/downloadtemplate/?assignment_type=Delisting
+  body: none
+  auth: none
+}
+
+params:query {
+  assignment_type: Delisting
+}

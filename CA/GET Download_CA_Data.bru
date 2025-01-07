@@ -1,0 +1,17 @@
+meta {
+  name: GET Download_CA_Data
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{base_url}}/ca/download_ca_data?type=Analyst&from_date=2024-12-01&to_date=2024-12-31
+  body: none
+  auth: none
+}
+
+params:query {
+  type: Analyst
+  from_date: 2024-12-01
+  to_date: 2024-12-31
+}

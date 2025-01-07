@@ -1,0 +1,22 @@
+meta {
+  name: POST Indxx EQ ITICS
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{base_url}}/existing/indxx_eq_itics/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+     "level1_code": "",
+      "level2_code": "",
+      "revenue_min": "",
+      "revenue_max": "",
+      "revenue_category": "",
+      "date": ""
+  }
+}

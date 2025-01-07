@@ -1,0 +1,65 @@
+meta {
+  name: GET Research Details
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/existing/ResearchViewSetNew/?id=""&date=2024-12-31&role=""
+  body: json
+  auth: none
+}
+
+params:query {
+  id: ""
+  date: 2024-12-31
+  role: ""
+}
+
+body:json {
+  {
+    "classification" : "",
+    "company" : "",
+    "deletedRecord" : "",
+    "deletedRecord_qc" : "",
+    "email_id" : "",
+    "role_type" : "",
+    "fy_ending_date" : "",
+    "fy_ending_date_qc" : "",
+    "revenue" : "",
+    "currency" : "",
+    "published_date" : "",
+    "revenue_style" : "",
+    "revenue_qc" : "",
+    "revenue_style_qc" : "",
+    "ca_qc" : "",
+    "ca" : "",
+    "source_type" : "",
+    "comments" : "",
+    "currency_qc" : "",
+    "status_1" : "",
+    "is_active" : "",
+    "report_id" : "",
+    "fy_ending_date_qc_action" : "",
+    "published_date_qc_action" : "",
+    "revenue_style_qc_action" : "",
+    "ca_qc_action" : "",
+    "is_active_qc_action" : "",
+    "revenue_qc_action" : "",
+    "currency_qc_action" : "",
+    "audit_comment" : "",
+    "currency_unit" : "",
+    "valid_from" : "",
+    "valid_from_qc" : "",
+    "valid_from_qc_action" : "",
+    "currency_value_qc" : "",
+    "currency_value_qc_action" : "",
+    "source_type" : "",
+    "source_type_qc" : "",
+    "source_type_qc_action" : "",
+    "report_id_qc_action" : "",
+    "id" : "",
+    "comments_url" : "",
+    "delete_file" : ""
+  }
+}
