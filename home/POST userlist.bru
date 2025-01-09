@@ -1,0 +1,18 @@
+meta {
+  name: POST userlist
+  type: http
+  seq: 64
+}
+
+post {
+  url: {{base_url}}/userlist/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "role": "ITICS_ANALYST"
+  }
+  
+}

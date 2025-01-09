@@ -1,0 +1,45 @@
+meta {
+  name: POST download masterdata requests data
+  type: http
+  seq: 50
+}
+
+post {
+  url: {{base_url}}/download/masterdata-requests-data/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "valid_data": {
+      "companies": [
+        ["Company A", "US1234567890", "Active"],
+        ["Company B", "US0987654321", "Active"]
+      ],
+      "levels2": [
+        ["Level1 A", "Level2 A", "L2A", "Active"],
+        ["Level1 B", "Level2 B", "L2B", "Active"]
+      ],
+      "levels1": [
+        ["Level1 A", "L1A", "Active"],
+        ["Level1 B", "L1B", "Active"]
+      ]
+    },
+    "invalid_data": {
+      "companies": [
+        ["Company C", "US1112131415", "Inactive"],
+        ["Company D", "US1617181920", "Inactive"]
+      ],
+      "levels2": [
+        ["Level1 C", "Level2 C", "L2C", "Inactive"],
+        ["Level1 D", "Level2 D", "L2D", "Inactive"]
+      ],
+      "levels1": [
+        ["Level1 C", "L1C", "Inactive"],
+        ["Level1 D", "L1D", "Inactive"]
+      ]
+    }
+  }
+  
+}

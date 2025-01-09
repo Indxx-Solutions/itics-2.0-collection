@@ -1,0 +1,20 @@
+meta {
+  name: POST Company Per Assignment
+  type: http
+  seq: 58
+}
+
+post {
+  url: {{base_url}}/CompanyPerAssignment/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "file": "example_file.xlsx",
+    "type": "assignment",
+    "email_id": "user@example.com"
+  }
+  
+}

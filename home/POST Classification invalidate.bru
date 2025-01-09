@@ -1,0 +1,20 @@
+meta {
+  name: POST Classification invalidate
+  type: http
+  seq: 46
+}
+
+post {
+  url: {{base_url}}/Classification/invalidate/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "date": "2024-03-31",
+    "id": "123",
+    "email_id": "user@example.com"
+  }
+  
+}

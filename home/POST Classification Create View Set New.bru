@@ -1,0 +1,60 @@
+meta {
+  name: POST Classification Create View Set New
+  type: http
+  seq: 48
+}
+
+post {
+  url: {{base_url}}/ClassificationCreateViewSetNew/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "classification": "",
+    "company": "123",
+    "deletedRecord": "",
+    "deletedRecord_qc": "",
+    "email_id": "user@example.com",
+    "role_type": "ITICS_ANALYST",
+    "fy_ending_date": "2024-03-31",
+    "fy_ending_date_qc": "2024-04-01",
+    "revenue": "1000000",
+    "currency": "USD",
+    "published_date": "2023-06-30",
+    "revenue_style": "GAAP",
+    "revenue_qc": "950000",
+    "revenue_style_qc": "IFRS",
+    "ca_qc": "100000",
+    "ca": "105000",
+    "source_type": "Annual Report",
+    "comments": "Some comments",
+    "currency_qc": "950000",
+    "status_1": "active",
+    "is_active": true,
+    "report_id": "RPT123",
+    "fy_ending_date_qc_action": "2024-04-02",
+    "published_date_qc_action": "2023-07-01",
+    "revenue_style_qc_action": "GAAP",
+    "ca_qc_action": "105000",
+    "is_active_qc_action": true,
+    "revenue_qc_action": "1000000",
+    "currency_qc_action": "USD",
+    "audit_comment": "Audit approved",
+    "currency_unit": "USD",
+    "valid_from": "2023-01-01",
+    "valid_from_qc": "2023-01-01",
+    "valid_from_qc_action": "2023-01-02",
+    "currency_value_qc": "1000000",
+    "currency_value_qc_action": "USD",
+    "source_type": "Annual Report",
+    "source_type_qc": "Annual Report",
+    "source_type_qc_action": "Quarterly Report",
+    "doc_report_qc_action": "RPT124",
+    "company_report_id": "456",
+    "comments_url": "http://example.com/comments",
+    "delete_file": ["file1.pdf", "file2.pdf"]
+  }
+  
+}

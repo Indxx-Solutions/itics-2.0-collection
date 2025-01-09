@@ -1,0 +1,27 @@
+meta {
+  name: PATCH search options
+  type: http
+  seq: 68
+}
+
+patch {
+  url: {{base_url}}/get_search_options/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+          "CA_FROM_DATE": "25",
+          "CA_TO_DATE": "16",
+          "analyst_existing_default": "10",
+          "qc_existing_default": "10",
+          "BLUE_THRESHOLD_ANALYST": "10",
+          "GREEN_THRESHOLD_ANALYST":"20",
+          "GREEN_THRESHOLD_QC":"30",
+          "BLUE_THRESHOLD_QC":"12",
+          "MIS_TIMELINE" :7,
+          "user_role" :"ITICS_RM"
+  
+  }
+}
