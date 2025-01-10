@@ -1,0 +1,22 @@
+meta {
+  name: POST AssignmentCompany
+  type: http
+  seq: 32
+}
+
+post {
+  url: {{base_url}}/assigncompany/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "user_id": "",
+    "company": "",
+    "assignment_type": "",
+    "universe_type": "",
+    "email_id": "",
+    "assignment_mode":""
+  }
+}

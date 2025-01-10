@@ -1,0 +1,19 @@
+meta {
+  name: POST Download Template
+  type: http
+  seq: 41
+}
+
+post {
+  url: {{base_url}}/downloadtemplate/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "filename": "example_template.xlsx",
+    "email": "user@example.com"
+  }
+  
+}

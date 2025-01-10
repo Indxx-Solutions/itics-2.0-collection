@@ -1,0 +1,18 @@
+meta {
+  name: POST Upload Data
+  type: http
+  seq: 44
+}
+
+post {
+  url: {{base_url}}/Upload_Data/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "file": "example_file.xlsx"
+  }
+  
+}

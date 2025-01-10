@@ -1,0 +1,22 @@
+meta {
+  name: POST submit File For Approval
+  type: http
+  seq: 62
+}
+
+post {
+  url: {{base_url}}/submitFileForApproval/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "file": "example_file.xlsx",
+    "email_id": "user@example.com",
+    "request_type": "addition",
+    "comment": "Requesting addition of new master data.",
+    "comments_url": "http://example.com/comments"
+  }
+  
+}

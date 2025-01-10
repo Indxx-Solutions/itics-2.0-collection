@@ -1,0 +1,34 @@
+meta {
+  name: POST download Classification data
+  type: http
+  seq: 73
+}
+
+post {
+  url: {{base_url}}/downloadClassificationdata/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "year": [
+      "2019"
+    ],
+    "company": [
+      "1 800 Flowers Com Inc"
+    ],
+    "isin": [
+      "US88025U1097"
+    ],
+    "level1": [
+      "Emerging Technologies"
+    ],
+    "level2": [
+      "Adventure Sports Services"
+    ],
+    "revenue_initial": 0,
+    "revenue_final": 50
+  }
+  
+}

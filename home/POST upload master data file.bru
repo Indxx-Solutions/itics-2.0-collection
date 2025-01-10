@@ -1,0 +1,19 @@
+meta {
+  name: POST upload master data file
+  type: http
+  seq: 43
+}
+
+post {
+  url: {{base_url}}/upload_master_data_file/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "file": "example_file.xlsx",
+    "request_type": "addition"
+  }
+  
+}
